@@ -14,7 +14,7 @@ However, the major technical issues are solved and the remaining work for a full
 
 # Installation
 
-In the Release folder, you can find the file `net.heutelbeck.streamdeck.fritz.sdPlugin.streamdeckPlugin`. If you double-click this file on your machine, Stream Deck will install the plugin.
+In the Release folder, you can find the file `net.heutelbeck.streamdeck.fritz.streamdeckPlugin`. If you double-click this file on your machine, Stream Deck will install the plugin.
 
 # Source code
 
