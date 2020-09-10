@@ -1,7 +1,7 @@
 {
   "Actions": [
     {
-      "Icon": "actionIcon", 
+      "Icon": "images/lights-on", 
       "Name": "Switch Socket", 
       "States": [
         {
@@ -21,7 +21,7 @@
   "Description": "Control your FRITZ!DECT appliances.", 
   "PropertyInspectorPath": "properties.html", 
   "Name": "FRITZ!DECT", 
-  "Icon": "images/Smarthome.svg", 
+  "Icon": "images/lights-on", 
   "URL": "https://github.com/heutelbeck", 
   "Version": "0.1",
   "OS": [
