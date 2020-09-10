@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,minimal-ui,viewport-fit=cover">
+		<meta name=apple-mobile-web-app-capable content=yes>
+		<meta name=apple-mobile-web-app-status-bar-style content=black>
+		<title>FRITZ!DECT Property Inspector</title>
+		<link rel="stylesheet" href="css/sdpi.css">
+	</head>
+
+	<body>
+		<div class="sdpi-wrapper">
+			<div class="sdpi-item" id="address" title="Fritz!Box Address">
+				<div class="sdpi-item-label">Fritz!Box Address</div> 
+				<input class="sdpi-item-value" type="text" id="addressinput" value="fritz.box">
+			</div>
+			
+			<div class="sdpi-item" id="user_name">
+				<div class="sdpi-item-label">Username (Optional)</div> 
+				<input class="sdpi-item-value" type="text" id="usernameinput" value="">
+			</div>
+	
+			<div class="sdpi-item" id="user_password">
+				<div class="sdpi-item-label">Password</div> 
+				<input type="password" id="userpasswordinput" class="sdpi-item-value" value="" placeholder="Enter your password">
+			</div>
+
+			<div class="sdpi-item" id="ain">
+				<div class="sdpi-item-label">Actor ID (AIN)</div> 
+				<input class="sdpi-item-value" type="text" id="aininput" value="">
+			</div>
+			
+		   <div class="sdpi-item" id="action_type">
+				<div class="sdpi-item-label">Action</div> 
+				<select class="sdpi-item-value select" id="action_select">
+				   <option value="setswitchon">ON</option>
+				   <option value="setswitchoff">OFF</option>
+				   <option value="setswitchtoggle">TOGGLE</option>
+				</select> 
+		   </div>
+		   
+			<div class="sdpi-item" id="parameters">
+				<div class="sdpi-item-label">Parameters (Optional)</div> 
+				<input class="sdpi-item-value" type="text" id="parametersinput" value="">
+			</div>
+	
+		</div>
+
+		<script src="js/fritz.js"></script>
+		<script src="js/properties.js"></script>
+	</body>
+</html>

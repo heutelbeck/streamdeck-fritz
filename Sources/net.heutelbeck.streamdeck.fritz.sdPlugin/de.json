@@ -1,0 +1,8 @@
+{
+  "Description": "Kontrolliere FRITZ!DECT Geräte.", 
+  "Name": "FRITZ!DECT Control", 
+  "net.heutelbeck.streamdeck.fritz.socketaction": {
+    "Name": "Steckdose schalten", 
+    "Tooltip": "Schalte eine FRITZ!DECT Steckdose."
+  }
+}

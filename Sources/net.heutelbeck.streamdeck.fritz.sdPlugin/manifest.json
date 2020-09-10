@@ -1,0 +1,41 @@
+{
+  "Actions": [
+    {
+      "Icon": "actionIcon", 
+      "Name": "Switch Socket", 
+      "States": [
+        {
+          "Image": "images/lights-off",
+          "TitleAlignment": "middle", 
+          "FontSize": "16"
+        }
+      ], 
+      "SupportedInMultiActions": true,
+      "Tooltip": "Switch a FRITZ!DECT Socket.", 
+      "UUID": "net.heutelbeck.streamdeck.fritz.socketaction"
+    }
+  ], 
+  "SDKVersion": 2,
+  "Author": "Dominic Heutelbeck", 
+  "CodePath": "plugin.html", 
+  "Description": "Control your FRITZ!DECT appliances.", 
+  "PropertyInspectorPath": "properties.html", 
+  "Name": "FRITZ!DECT", 
+  "Icon": "images/Smarthome.svg", 
+  "URL": "https://github.com/heutelbeck", 
+  "Version": "0.1",
+  "OS": [
+    {
+        "Platform": "mac", 
+        "MinimumVersion" : "10.11"
+    },
+    {
+        "Platform": "windows", 
+        "MinimumVersion" : "10"
+    }
+  ],
+  "Software": 
+    {
+        "MinimumVersion" : "4.1"
+    }
+}
