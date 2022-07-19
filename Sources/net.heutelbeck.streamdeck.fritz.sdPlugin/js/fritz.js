@@ -1,13 +1,3 @@
-function toggleTest() {
-	console.log("toggle...");
-	var password = '8IJXJXM@gw7N6rG&1Mg3';
-	var ain = '087610016419';
-	var address = 'fritz.box';
-	authnAndExecute(address,null,password,'setswitchtoggle',ain, null, function (result) 
-	{
-		console.log("switch state now:",result);
-	});
-}
 
 function authnAndExecute(address, username, password, command, ain, parameters, callback) {
 	var baseUrl = 'http://'+address+'/login_sid.lua';
@@ -23,22 +13,25 @@ function authnAndExecute(address, username, password, command, ain, parameters, 
 			if(isInvalidSID(sid)) {
 				var challenge = xmlDoc.getElementsByTagName("Challenge")[0].childNodes[0].nodeValue;
 				var response = challenge+"-"+MD5(challenge+'-'+password);
+				if(username) {
+					response+= '&username='+username;
+				}	
 				var result = httpGetAsync(baseUrl+'?response='+response,
 					function(authnResponse) {
 						var authnXmlDoc = parser.parseFromString(authnResponse, "text/xml");
 						var theRealSid = authnXmlDoc.getElementsByTagName("SID")[0].childNodes[0].nodeValue;
-						executeCommand(command,ain,theRealSid,parameters,callback);
+						executeCommand(address,command,ain,theRealSid,parameters,callback);
 					}
 				); 				
 			} else {
-				executeCommand(command,ain,sid,parameters,callback);
+				executeCommand(address,command,ain,sid,parameters,callback);
 			}
 		}
 	);
 }
 
-function executeCommand (command, ain, sid, parameters, callback) {
-	var url = 'http://fritz.box/webservices/homeautoswitch.lua';
+function executeCommand (address,command, ain, sid, parameters, callback) {
+	var url = 'http://'+address+'/webservices/homeautoswitch.lua';
 	url += '?ain='+ain+'&switchcmd='+command+'&sid='+sid;
 	if(parameters) {
 		url += '&param='+parameters;

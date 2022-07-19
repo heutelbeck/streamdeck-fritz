@@ -16,6 +16,11 @@ However, the major technical issues are solved and the remaining work for a full
 
 In the Release folder, you can find the file `net.heutelbeck.streamdeck.fritz.streamdeckPlugin`. If you double-click this file on your machine, Stream Deck will install the plugin.
 
+# Configuration remarks:
+
+* The username is a required parameter. The default username is automatically generated and you can find it in the FRITZ!Box UI in the matching section of the System menu. 
+* The Actor ID should be entered without spaces
+
 # Source code
 
 The Sources folder contains the source code of the plugin.

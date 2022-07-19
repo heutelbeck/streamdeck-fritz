@@ -22,8 +22,8 @@
   "PropertyInspectorPath": "properties.html", 
   "Name": "FRITZ!DECT", 
   "Icon": "images/lights-on", 
-  "URL": "https://github.com/heutelbeck", 
-  "Version": "0.1",
+  "URL": "https://github.com/heutelbeck/streamdeck-fritz", 
+  "Version": "0.2",
   "OS": [
     {
         "Platform": "mac", 

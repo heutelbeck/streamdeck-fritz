@@ -11,6 +11,7 @@ var websocket = null,
 
 function connectElgatoStreamDeckSocket (inPort, inUUID, inMessageType, inApplicationInfo, inActionInfo) 
 {
+	console.log("Connect to StramDeck Socket");
 	// Cleanup dangling websockt is exists and connect
 	if (websocket) {
         websocket.close();
